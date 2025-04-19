@@ -1,0 +1,30 @@
+# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/actions/stale
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: '41 11 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v5
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Stale issue message'
+        stale-pr-message: 'Stale pull request message'
+        stale-issue-label: 'no-issue-activity'
+        stale-pr-label: 'no-pr-activity'
+yml.xps
+怇指椇氇脇鰇긇먇鐈攉栉稉鈉頉ꐉ뀉댉똉뤉
+ชᨊ⨊ⴊ《㌊㘊㤊㰊㼊䈊䔊䠊䬊上儊吊圊娊挊笊鼊ꈊ먊쀊옊줊찊팊혊񒠊欋焋琋看倳踳ꤳ묳윳㈷瘷簷렷쐷윷쨷촷氹砹萹蜹錹ꈹꔹ꠹ꬹ긹넹됹뜹먹봹쀹쌹옹줹켹਺ഺ∺⠺⸺ㄺ㐺㜺㴺䀺䌺䘺䤺䰺刺堺嬺Ɏ愇搇樇洇與鴇꼇묇ఊ昉椉笉錉餉ꔉ넉됉뜉먉Ċ༊ᬊ⬊⸊ㄊ㐊㜊㨊㴊䀊䌊䘊䤊䰊伊刊唊堊嬊搊簊ꀊꌊ묊섊윊쨊촊퐊휊򒤊氋爋甋砋儳輳ꨳ밳젳㌷眷紷뤷씷젷쬷츷洹礹蔹蠹鐹ꌹ꘹ꤹ갹꼹눹딹령묹븹섹쐹윹쨹퀹଺ฺ⌺⤺⼺㈺㔺㠺㸺䄺䐺䜺䨺䴺区夺尺͎    與 꼇묇  椉  餉ꔉ     Ċ              伊   嬊  ꀊꌊ                 輳 밳젳   紷뤷     礹            븹   쨹  ଺ฺ                 
